@@ -1,0 +1,107 @@
+body {
+    background-color: #1a1a1a;
+    color: #00ff41;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #00ff41;
+    padding: 20px;
+    box-shadow: 0 0 20px #00ff41;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #00ff41;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#score-display {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#scenario-text-wrapper {
+    min-height: 100px; 
+    margin-top: 20px;
+}
+
+#scenario-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    white-space: pre-wrap; 
+}
+
+#options-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #00ff41;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+#outcome-wrapper {
+    margin-top: 20px;
+}
+
+#outcome-text {
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.good-outcome {
+    color: #00ff41;
+}
+
+.bad-outcome {
+    color: #ff4141;
+}
+
+#game-over {
+    text-align: center;
+}
+
+#final-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.hidden {
+    display: none;
+}
